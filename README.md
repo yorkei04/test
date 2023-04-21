@@ -5,7 +5,7 @@
 
 ## Contributors
 
-{% for student in site.stu %}
+{% for stu in site._stu %}
 ![{{ stu.name }}]({{ stu.image }})
 
 **Username:** @{{ stu.user }}
