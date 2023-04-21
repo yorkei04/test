@@ -1,13 +1,18 @@
+---
+layout: default
+---
 
 ## Contributors
 
-{% for member in site._stu %}
-  ![{{ member.name }}'s image]({{ member.image }})
-  - GitHub: [@{{ member.user }}](https://github.com/{{ member.user }})
-  - Name: {{ member.name }}
-  {% if member.content %}
-  - Contribution: {{ member.content }}
-  {% endif %}
+{% for student in site.stu %}
+![{{ student.name }}]({{ student.image }})
+
+**Username:** @{{ student.user }}
+
+**Name:** {{ student.name }}
+
+**Content:** {{ student.content | markdownify }}
+
 {% endfor %}
 <!--
   <<< Author notes: Header of the course >>>
