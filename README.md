@@ -4,22 +4,18 @@ layout: default
 
 <!DOCTYPE html> <body> 
 
-{% include stu.html %}
-
-
 ## Contributors
 
-{% for stu in site._stu %}
-![{{ stu.name }}]({{ stu.image }})
+{% for student in site.stu %}
+![{{ student.name }}]({{ student.image }})
 
-**Username:** @{{ stu.user }}
+**Username:** @{{ student.user }}
 
-**Name:** {{ stu.name }}
+**Name:** {{ student.name }}
 
 **Content:** {{ student.content | markdownify }}
 
 {% endfor %}
-
 
 </body> 
 </html>
