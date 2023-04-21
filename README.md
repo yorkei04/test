@@ -2,6 +2,9 @@
 layout: default
 ---
 
+# Your Project Title
+
+Some content about your project.
 
 ## Contributors
 
@@ -15,4 +18,3 @@ layout: default
 **Content:** {{ student.content | markdownify }}
 
 {% endfor %}
-
