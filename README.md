@@ -5,11 +5,11 @@ layout: default
 ## Contributors
 
 {% for student in site.stu %}
-![{{ student.name }}]({{ student.image }})
+![{{ stu.name }}]({{ stu.image }})
 
-**Username:** @{{ student.user }}
+**Username:** @{{ stu.user }}
 
-**Name:** {{ student.name }}
+**Name:** {{ stu.name }}
 
 **Content:** {{ student.content | markdownify }}
 
