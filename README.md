@@ -1,3 +1,14 @@
+# Contributors
+
+{% for member in site.stu %}
+  ![{{ member.name }}'s image]({{ member.image }})
+  - GitHub: [@{{ member.user }}](https://github.com/{{ member.user }})
+  - Name: {{ member.name }}
+  {% if member.content %}
+  - Contribution: {{ member.content }}
+  {% endif %}
+{% endfor %}
+
 <!--
   <<< Author notes: Header of the course >>>
   Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
