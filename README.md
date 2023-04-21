@@ -2,7 +2,6 @@
 layout: default
 ---
 
-<!DOCTYPE html> <body> 
 
 ## Contributors
 
@@ -17,5 +16,3 @@ layout: default
 
 {% endfor %}
 
-</body> 
-</html>
