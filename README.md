@@ -1,10 +1,7 @@
----
-layout: default
----
 
 ## Contributors
 
-{% for member in site.stu %}
+{% for member in site._stu %}
   ![{{ member.name }}'s image]({{ member.image }})
   - GitHub: [@{{ member.user }}](https://github.com/{{ member.user }})
   - Name: {{ member.name }}
