@@ -1,3 +1,5 @@
+{% include stu.html %}
+
 ---
 layout: default
 ---
