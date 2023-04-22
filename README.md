@@ -1,23 +1,11 @@
----
-layout: default
----
-
-# Your Project Title
-
-Some content about your project.
-
 ## Contributors
 
-{% for student in site.stu %}
-![{{ student.name }}]({{ student.image }})
-
-**Username:** @{{ student.user }}
-
-**Name:** {{ student.name }}
-
-**Content:** {{ student.content | markdownify }}
-
+{% for member in site.stu %}
+![{{ member.name }}]({{ member.image }})
+[{{ member.user }}](https://github.com/{{ member.user }})
+**{{ member.name }}**\
+{{ member.content }}
 {% endfor %}
+```
 
-
-[https://github.com/yorkei04/test/tree/main/_stu](.1155000000.md)
+This will loop through all the `.md` files in the `_stu` directory and display their image, user, name, and content.
